@@ -1,0 +1,186 @@
+{
+  "videos_analysis": [
+    {
+      "id": "video_001",
+      "youtube_id": "dQw4w9WgXcQ",
+      "title": "¿Por qué soy alcista en Bitcoin? | José Luis Cava",
+      "channel": "@JoseLuisCavatv",
+      "url": "https://youtube.com/watch?v=dQw4w9WgXcQ",
+      "published_date": "2025-05-21T00:00:00Z",
+      "duration_minutes": 7,
+      "views": 123000,
+      "analysis": {
+        "timestamp_analyzed": "2025-05-23T14:30:00Z",
+        "activo": "Bitcoin",
+        "tendencia": "ALCISTA",
+        "confianza": "ALTA",
+        "tesis_principal": "Bitcoin se encuentra en una fase de acumulación institucional tras limpiar los stops de especuladores débiles. El patrón técnico sugiere entrada en onda 3 de Elliott.",
+        "ciclo_tecnico": "Onda 3 de Elliott, en fase alcista",
+        "factores_psicologicos": "Las manos débiles ya fueron liquidadas. Necesario purgar pánico previo. Ahora es acumulación silenciosa de ballenas.",
+        "macroeconomicos": [
+          "Inyecciones de liquidez de FED y BCE",
+          "Depreciación del dólar",
+          "Halving próximo en 2024 (ciclo bullish histórico)"
+        ],
+        "niveles_tecnicos": {
+          "soportes": [
+            "79000 - Soporte fuerte",
+            "75000 - Soporte de largo plazo"
+          ],
+          "resistencias": [
+            "85000 - Resistencia inmediata",
+            "100000 - Target medio plazo"
+          ],
+          "zona_operacion": "Comprar en caídas hacia 79000-81000"
+        },
+        "riesgos": [
+          "Regulación sorpresa",
+          "Saturación institucional",
+          "Flash crash por liquidaciones"
+        ],
+        "recomendacion": "COMPRA",
+        "accion_especifica": "Comprar en zona 79000-81000, objetivo 100000+",
+        "proximo_catalista": "Aprobación de ETF spot Bitcoin, Halving 2024",
+        "frase_clave": "Las manos débiles ya están fuera. Ahora empieza el verdadero movimiento.",
+        "sentiment_score": 8.5
+      },
+      "transcript": "El contenido de la transcripción aquí...",
+      "status": "completed",
+      "reliability": {
+        "sources": "YouTube transcript API",
+        "method": "Gemini 1.5 Flash",
+        "validation": "Manual review pending"
+      }
+    },
+    {
+      "id": "video_002",
+      "youtube_id": "xyz789",
+      "title": "¿Por qué soy alcista en el S&P500? | José Luis Cava",
+      "channel": "@JoseLuisCavatv",
+      "url": "https://youtube.com/watch?v=xyz789",
+      "published_date": "2025-05-19T00:00:00Z",
+      "duration_minutes": 14,
+      "views": 152000,
+      "analysis": {
+        "timestamp_analyzed": "2025-05-23T14:35:00Z",
+        "activo": "S&P 500",
+        "tendencia": "ALCISTA",
+        "confianza": "MEDIA",
+        "tesis_principal": "S&P500 ha entrado en zona de acumulación tras limpiar bajistas. Pero hay advertencia sobre burbuja tecnológica tipo 2000.",
+        "ciclo_tecnico": "Onda 3 en formación, pero riesgo de corrección a onda 4",
+        "factores_psicologicos": "Miedo bajista parcial limpiado. Pero falta mayor pánico para considerar "compra perfecta".",
+        "macroeconomicos": [
+          "Tasas de interés potencialmente alcistas",
+          "Ganancias corporativas sólidas",
+          "Preocupación por burbuja tecnológica 2.0"
+        ],
+        "niveles_tecnicos": {
+          "soportes": [
+            "5200 - Soporte importante",
+            "5000 - Soporte histórico"
+          ],
+          "resistencias": [
+            "5500 - Resistencia inmediata",
+            "5800 - Target bull"
+          ],
+          "zona_operacion": "Comprar en correcciones hacia 5250"
+        },
+        "riesgos": [
+          "Burbuja tecnológica 2.0 en formación",
+          "Sobrevaloración de mega-cap tech",
+          "Tasas de interés pueden subir"
+        ],
+        "recomendacion": "ESPERA",
+        "accion_especifica": "Esperar corrección mayor antes de compra agresiva. Pequeñas posiciones en caídas.",
+        "proximo_catalista": "Earnings de mega-caps, decisión de tasas de la FED",
+        "frase_clave": "El alcismo está aquí, pero con advertencia: no podemos ignorar la burbuja potencial.",
+        "sentiment_score": 6.8
+      },
+      "transcript": "El contenido de la transcripción aquí...",
+      "status": "completed",
+      "reliability": {
+        "sources": "YouTube transcript API",
+        "method": "Gemini 1.5 Flash",
+        "validation": "Manual review pending"
+      }
+    },
+    {
+      "id": "video_003",
+      "youtube_id": "abc123",
+      "title": "¿Por qué soy alcista en el ORO? | José Luis Cava",
+      "channel": "@JoseLuisCavatv",
+      "url": "https://youtube.com/watch?v=abc123",
+      "published_date": "2025-05-15T00:00:00Z",
+      "duration_minutes": 7,
+      "views": 147000,
+      "analysis": {
+        "timestamp_analyzed": "2025-05-23T14:40:00Z",
+        "activo": "Oro",
+        "tendencia": "ALCISTA",
+        "confianza": "ALTA",
+        "tesis_principal": "El oro es refugio ante incertidumbre geopolítica (Irán, Ucrania) y depreciación del dólar. Patrón técnico muy alcista.",
+        "ciclo_tecnico": "Ruptura de resistencias, inicio de trend alcista",
+        "factores_psicologicos": "Miedo geopolítico = Flujos hacia oro. Sin pánico aún, hay acumulación de inversionistas.",
+        "macroeconomicos": [
+          "Debilidad del dólar",
+          "Conflictos geopolíticos activos",
+          "Inflación persistente",
+          "Políticas de banco central expansivas"
+        ],
+        "niveles_tecnicos": {
+          "soportes": [
+            "2050 - Soporte reciente",
+            "2000 - Soporte largo plazo"
+          ],
+          "resistencias": [
+            "2100 - Resistencia psicológica",
+            "2150 - Target corto plazo"
+          ],
+          "zona_operacion": "Comprar en correcciones hacia 2050-2070"
+        },
+        "riesgos": [
+          "Fortaleza sorpresa del dólar",
+          "Resolución pacífica de conflictos",
+          "Tasas de interés reales altas (negativo para oro)"
+        ],
+        "recomendacion": "COMPRA",
+        "accion_especifica": "Posición de cobertura: 2070, objetivo 2150+. Mantener aunque suba el dólar.",
+        "proximo_catalista": "Escalada geopolítica, debilitamiento del dólar, decisión de tasas",
+        "frase_clave": "Mientras el mundo es un polvorín, el oro sigue siendo la cobertura más segura.",
+        "sentiment_score": 7.8
+      },
+      "transcript": "El contenido de la transcripción aquí...",
+      "status": "completed",
+      "reliability": {
+        "sources": "YouTube transcript API",
+        "method": "Gemini 1.5 Flash",
+        "validation": "Manual review pending"
+      }
+    }
+  ],
+  "metadata": {
+    "total_videos_analyzed": 3,
+    "channels_tracked": [
+      "@JoseLuisCavatv",
+      "@HOPLAFinance"
+    ],
+    "last_update": "2025-05-23T14:40:00Z",
+    "next_check": "2025-05-24T06:00:00Z",
+    "assets_monitored": [
+      "Bitcoin",
+      "S&P 500",
+      "Oro"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 0,
+    "neutral_count": 1,
+    "average_sentiment": 7.7
+  },
+  "summary": {
+    "overall_market_view": "ALCISTA con advertencias",
+    "bitcoin_signal": "COMPRA - Alta confianza",
+    "sp500_signal": "ESPERA - Riesgo de corrección",
+    "gold_signal": "COMPRA - Alta confianza",
+    "composite_recommendation": "Acumular Bitcoin y Oro, esperar en S&P500"
+  }
+}
