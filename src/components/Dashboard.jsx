@@ -12,6 +12,23 @@ const ASSET_LIST = [ASSETS.BITCOIN, ASSETS.SP500, ASSETS.GOLD, ASSETS.MULTIPLE]
 export default function Dashboard({ analyses = [], loading, summary, metadata, onRefresh }) {
   const [selectedAsset, setSelectedAsset] = useState(null)
   const [sortBy, setSortBy] = useState("date")
+  const [analyzing, setAnalyzing] = useState(false)
+  const [analyzeMsg, setAnalyzeMsg] = useState(null)
+
+  async function handleAnalyzeNow() {
+    setAnalyzing(true)
+    setAnalyzeMsg(null)
+    try {
+      const res = await fetch("/api/cron/analyze")
+      const data = await res.json()
+      setAnalyzeMsg(data.message || "Análisis completado")
+      await onRefresh()
+    } catch {
+      setAnalyzeMsg("Error al ejecutar el análisis")
+    } finally {
+      setAnalyzing(false)
+    }
+  }
 
   const assetGrouped = useMemo(() => {
     const groups = Object.fromEntries(ASSET_LIST.map((a) => [a, []]))
@@ -43,12 +60,26 @@ export default function Dashboard({ analyses = [], loading, summary, metadata, o
             <h1 className="text-3xl font-bold text-white mb-1">Análisis Financiero Automático</h1>
             <p className="text-gray-400 text-sm">José Luis Cava · Bitcoin · S&P 500 · Oro</p>
           </div>
-          <button
-            onClick={onRefresh}
-            className="mt-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition"
-          >
-            Actualizar
-          </button>
+          <div className="flex flex-col items-end gap-2">
+            <div className="flex gap-2">
+              <button
+                onClick={onRefresh}
+                className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm font-semibold rounded-lg transition"
+              >
+                Actualizar
+              </button>
+              <button
+                onClick={handleAnalyzeNow}
+                disabled={analyzing}
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-wait text-white text-sm font-semibold rounded-lg transition"
+              >
+                {analyzing ? "Analizando..." : "Analizar ahora"}
+              </button>
+            </div>
+            {analyzeMsg && (
+              <p className="text-xs text-gray-400">{analyzeMsg}</p>
+            )}
+          </div>
         </div>
 
         {/* Stats */}
@@ -140,7 +171,7 @@ export default function Dashboard({ analyses = [], loading, summary, metadata, o
           {metadata?.last_update
             ? `Última actualización: ${timeAgo(metadata.last_update)}`
             : "Sin datos aún"}
-          {" · "}Próxima actualización automática cada 6h
+          {" · "}Actualización automática diaria a las 14:00h
         </div>
       </div>
     </div>
