@@ -28,4 +28,11 @@ next-env.d.ts
 # data local (no subir a git)
 /data/*.json
 
+# scripts y archivos de trabajo temporales
+*.pdf
+transcripciones.txt
+process-transcripts.mjs
+read-pdf.cjs
+read-pdf.mjs
+
 .vercel
