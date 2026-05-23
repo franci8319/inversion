@@ -4,7 +4,7 @@ export async function GET() {
   const checks = {
     youtube_api: !!process.env.YOUTUBE_API_KEY,
     gemini_api: !!process.env.GEMINI_API_KEY,
-    storage: process.env.KV_URL ? "vercel-kv" : "local-json",
+    storage: process.env.SUPABASE_URL ? "supabase" : process.env.KV_URL ? "vercel-kv" : "local-json",
     cron_secret: !!process.env.CRON_SECRET
   }
 
