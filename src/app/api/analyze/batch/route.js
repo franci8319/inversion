@@ -3,7 +3,7 @@ import { analyzeTranscript } from "@/lib/gemini"
 import { saveAnalysis, isVideoAnalyzed } from "@/lib/storage"
 import { generateId, buildVideoUrl } from "@/lib/utils"
 
-export const maxDuration = 600
+export const maxDuration = 300
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 const DELAY_MS = 15000
