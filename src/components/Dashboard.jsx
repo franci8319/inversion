@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react"
 import VideoCard from "./VideoCard"
 import AssetSummary from "./AssetSummary"
+import SpyScore from "./SpyScore"
 import { SkeletonCard } from "./LoadingState"
 import { ASSETS } from "@/lib/constants"
 import { timeAgo } from "@/lib/utils"
@@ -93,6 +94,11 @@ export default function Dashboard({ analyses = [], loading, summary, metadata, o
             label="Últimas 24h"
             value={analyses.filter((a) => Date.now() - new Date(a.published_date) < 86400000).length}
           />
+        </div>
+
+        {/* Scoring SPY 21:10h */}
+        <div className="mb-8">
+          <SpyScore />
         </div>
 
         {/* Resumen por activo */}
