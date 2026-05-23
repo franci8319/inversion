@@ -12,7 +12,8 @@
       "Bash(Format-Table -AutoSize)",
       "Read(//e/ANTIGRAVITY/villegasonline/**)",
       "Bash(grep -E \"\\\\.\\(md|txt|json|config|yaml|yml\\)$\")",
-      "Bash(gh auth *)"
+      "Bash(gh auth *)",
+      "PowerShell(Invoke-RestMethod \"https://inversion-tau.vercel.app/api/health\")"
     ],
     "additionalDirectories": [
       "E:\\ANTIGRAVITY\\villegasonline"

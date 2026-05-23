@@ -16,19 +16,23 @@ export async function POST(request) {
     return Response.json({ skipped: true, message: `${title} ya estaba analizado` })
   }
 
-  const analysis = await analyzeTranscript(transcript, title)
+  try {
+    const analysis = await analyzeTranscript(transcript, title)
 
-  await saveAnalysis({
-    id: generateId(),
-    youtube_id: videoId,
-    title,
-    channel,
-    url: buildVideoUrl(videoId),
-    published_date: publishedDate || new Date().toISOString(),
-    transcript,
-    analysis,
-    timestamp_analyzed: new Date().toISOString()
-  })
+    await saveAnalysis({
+      id: generateId(),
+      youtube_id: videoId,
+      title,
+      channel,
+      url: buildVideoUrl(videoId),
+      published_date: publishedDate || new Date().toISOString(),
+      transcript,
+      analysis,
+      timestamp_analyzed: new Date().toISOString()
+    })
 
-  return Response.json({ success: true, message: `✓ ${title} analizado y guardado` })
+    return Response.json({ success: true, message: `✓ ${title} analizado y guardado` })
+  } catch (err) {
+    return Response.json({ error: err.message }, { status: 500 })
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Invoke-RestMethod -Method POST \"https://api.vercel.com/v1/integrations/deploy/prj_3qsiDXanF6KlpFcPNMWfIohNFbBe/bnvkax2LkM\")",
+      "PowerShell(try { $r = Invoke-RestMethod \"https://inversion-tau.vercel.app/api/health\"; $r | ConvertTo-Json } catch { $stream = $_.Exception.Response.GetResponseStream\\(\\); $reader = New-Object System.IO.StreamReader\\($stream\\); $reader.ReadToEnd\\(\\) })",
+      "PowerShell(Test-Path \"e:\\\\ANTIGRAVITY\\\\inversion\\\\data\\\\analyses.json\" | Write-Host; if \\(Test-Path \"e:\\\\ANTIGRAVITY\\\\inversion\\\\data\\\\analyses.json\"\\) { $d = Get-Content \"e:\\\\ANTIGRAVITY\\\\inversion\\\\data\\\\analyses.json\" | ConvertFrom-Json; Write-Host \"Videos guardados: $\\($d.videos.Count\\)\" })",
+      "Bash(npx vercel *)",
+      "PowerShell(cd \"e:\\\\ANTIGRAVITY\\\\inversion\"; [System.Text.Encoding]::ASCII.GetBytes\\(\"cava2025\"\\) | & { $input | & { param\\($bytes\\) $bytes } } ; $val = \"cava2025\"; $bytes = [System.Text.Encoding]::ASCII.GetBytes\\($val\\); Write-Host \"Bytes: $\\($bytes.Length\\), Values: $\\($bytes -join ','\\)\"; $val | npx vercel env add CRON_SECRET production 2>&1)",
+      "PowerShell($token = \\(Get-Content \"$env:APPDATA\\\\.vercel\\\\auth.json\" -Raw | ConvertFrom-Json\\).token; Write-Host \"Token found: $\\($token.Length\\) chars\")",
+      "Read(//c/Users/Villegas/AppData/Local/com.vercel.cli/**)",
+      "PowerShell($token = \\(Get-Content \"C:\\\\Users\\\\Villegas\\\\AppData\\\\Roaming\\\\xdg.data\\\\com.vercel.cli\\\\auth.json\" -Raw | ConvertFrom-Json\\).token; Write-Host \"Token found: $\\($token.Length\\) chars\")",
+      "Bash(curl -s \"https://inversion-tau.vercel.app/api/health\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(python3 -c ' *)",
+      "PowerShell(Get-Command python, python3, py -ErrorAction SilentlyContinue)",
+      "Bash(grep -n \"^\\\\\\([0-9]\\\\{1,2\\\\}\\\\\\)\\\\. \" \"e:/ANTIGRAVITY/inversion/transcripciones.txt\")",
+      "Bash(node --input-type=module --eval ' *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000/api/health)",
+      "Bash(node process-transcripts.mjs)",
+      "Bash(curl -s http://localhost:3001/api/health)",
+      "Bash(curl -s \"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPY&outputsize=compact&apikey=FVJBTL9BC0TB1RUG\")",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); const j=JSON.parse\\(d\\); const days=Object.entries\\(j['Time Series \\(Daily\\)']\\).sort\\(\\([a],[b]\\)=>new Date\\(b\\)-new Date\\(a\\)\\).slice\\(0,3\\); days.forEach\\(\\([date,v]\\)=>console.log\\(date, 'close:', v['4. close'], 'vol:', v['5. volume']\\)\\)\")",
+      "Bash(npm install *)"
+    ]
+  }
+}

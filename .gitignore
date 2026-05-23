@@ -27,3 +27,5 @@ next-env.d.ts
 
 # data local (no subir a git)
 /data/*.json
+
+.vercel
